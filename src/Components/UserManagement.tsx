@@ -46,6 +46,20 @@ export default function UserList() {
     },
   ];
 
+
+  const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    height:600,
+    width: 800,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+
   const rows = [
     { id: 1, fullName: 'Nguyễn Như Đức', code: '0953-5389-963', note: 'Bach Khoa - Ha Noi' },
     { id: 2, fullName: 'Nguyễn Như Đức', code: 'Cersei', note: 'Bach Khoa - Ha Noi' },
@@ -90,7 +104,7 @@ export default function UserList() {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
           >
-            <Box >
+            <Box sx={style} >
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 Text in a modal
               </Typography>
